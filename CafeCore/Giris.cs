@@ -36,7 +36,7 @@ namespace CafeCore
 
         }
 
-        private void btnfrmMenuEkle_Click(object sender, EventArgs e)
+        private void btnfrmMenuEkle_Click(object sender, EventArgs e)  
         {
             if(_kategoriUrunEkle == null)
             {
