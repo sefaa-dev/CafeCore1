@@ -297,7 +297,14 @@ namespace CafeCore.Forms
             this.Hide();
         }
 
-       
+        private void silToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (lstKategori.SelectedItems.Count != 0)
+                MessageBox.Show("Silindi");
+
+        }
+
+
 
 
 

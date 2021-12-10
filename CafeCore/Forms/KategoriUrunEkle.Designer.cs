@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tcKategoriEkle = new System.Windows.Forms.TabControl();
             this.tpKategoriEkle = new System.Windows.Forms.TabPage();
             this.lstKategori = new System.Windows.Forms.ListView();
@@ -50,9 +51,12 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btnMenuEGeri = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tcKategoriEkle.SuspendLayout();
             this.tpKategoriEkle.SuspendLayout();
             this.tpUrunEkle.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcKategoriEkle
@@ -89,6 +93,7 @@
             // lstKategori
             // 
             this.lstKategori.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lstKategori.ContextMenuStrip = this.contextMenuStrip1;
             this.lstKategori.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lstKategori.HideSelection = false;
             this.lstKategori.Location = new System.Drawing.Point(413, 8);
@@ -97,6 +102,7 @@
             this.lstKategori.TabIndex = 23;
             this.lstKategori.UseCompatibleStateImageBehavior = false;
             this.lstKategori.SelectedIndexChanged += new System.EventHandler(this.lstKategori_SelectedIndexChanged);
+            this.lstKategori.DoubleClick += new System.EventHandler(this.silToolStripMenuItem_Click);
             // 
             // btnKategoriSil
             // 
@@ -322,6 +328,20 @@
             this.btnMenuEGeri.UseVisualStyleBackColor = true;
             this.btnMenuEGeri.Click += new System.EventHandler(this.btnMenuEGeri_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.silToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(87, 26);
+            // 
+            // silToolStripMenuItem
+            // 
+            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.silToolStripMenuItem.Text = "Sil";
+            this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
+            // 
             // KategoriUrunEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -339,6 +359,7 @@
             this.tpKategoriEkle.PerformLayout();
             this.tpUrunEkle.ResumeLayout(false);
             this.tpUrunEkle.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -367,5 +388,7 @@
         private System.Windows.Forms.ComboBox cmbKategoriAdi;
         private System.Windows.Forms.ListView lstKategori;
         private System.Windows.Forms.Button btnMenuEGeri;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
     }
 }
