@@ -289,6 +289,20 @@ namespace CafeCore.Forms
 
         }
 
+        private void btnMenuEGeri_Click(object sender, EventArgs e)
+        {
+            Giris frmGirisMenu = new Giris();
+
+            frmGirisMenu.Show();
+            this.Hide();
+        }
+
+       
+
+
+
+
+
 
         // ÜRÜN KISMI BİTTİ //
     }

@@ -49,6 +49,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnMenuEGeri = new System.Windows.Forms.Button();
             this.tcKategoriEkle.SuspendLayout();
             this.tpKategoriEkle.SuspendLayout();
             this.tpUrunEkle.SuspendLayout();
@@ -58,13 +59,12 @@
             // 
             this.tcKategoriEkle.Controls.Add(this.tpKategoriEkle);
             this.tcKategoriEkle.Controls.Add(this.tpUrunEkle);
-            this.tcKategoriEkle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcKategoriEkle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tcKategoriEkle.Location = new System.Drawing.Point(0, 0);
+            this.tcKategoriEkle.Location = new System.Drawing.Point(12, 12);
             this.tcKategoriEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tcKategoriEkle.Name = "tcKategoriEkle";
             this.tcKategoriEkle.SelectedIndex = 0;
-            this.tcKategoriEkle.Size = new System.Drawing.Size(880, 404);
+            this.tcKategoriEkle.Size = new System.Drawing.Size(796, 418);
             this.tcKategoriEkle.TabIndex = 25;
             // 
             // tpKategoriEkle
@@ -82,7 +82,7 @@
             this.tpKategoriEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpKategoriEkle.Name = "tpKategoriEkle";
             this.tpKategoriEkle.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tpKategoriEkle.Size = new System.Drawing.Size(872, 354);
+            this.tpKategoriEkle.Size = new System.Drawing.Size(788, 368);
             this.tpKategoriEkle.TabIndex = 0;
             this.tpKategoriEkle.Text = "Kategori Ekle";
             // 
@@ -93,7 +93,7 @@
             this.lstKategori.HideSelection = false;
             this.lstKategori.Location = new System.Drawing.Point(413, 8);
             this.lstKategori.Name = "lstKategori";
-            this.lstKategori.Size = new System.Drawing.Size(437, 344);
+            this.lstKategori.Size = new System.Drawing.Size(369, 278);
             this.lstKategori.TabIndex = 23;
             this.lstKategori.UseCompatibleStateImageBehavior = false;
             this.lstKategori.SelectedIndexChanged += new System.EventHandler(this.lstKategori_SelectedIndexChanged);
@@ -104,7 +104,7 @@
             this.btnKategoriSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKategoriSil.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnKategoriSil.ForeColor = System.Drawing.Color.White;
-            this.btnKategoriSil.Location = new System.Drawing.Point(153, 285);
+            this.btnKategoriSil.Location = new System.Drawing.Point(153, 213);
             this.btnKategoriSil.Name = "btnKategoriSil";
             this.btnKategoriSil.Size = new System.Drawing.Size(95, 67);
             this.btnKategoriSil.TabIndex = 4;
@@ -118,7 +118,7 @@
             this.btnKategoriGuncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKategoriGuncelle.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnKategoriGuncelle.ForeColor = System.Drawing.Color.White;
-            this.btnKategoriGuncelle.Location = new System.Drawing.Point(281, 285);
+            this.btnKategoriGuncelle.Location = new System.Drawing.Point(281, 213);
             this.btnKategoriGuncelle.Name = "btnKategoriGuncelle";
             this.btnKategoriGuncelle.Size = new System.Drawing.Size(95, 67);
             this.btnKategoriGuncelle.TabIndex = 5;
@@ -132,7 +132,7 @@
             this.btnKategoriEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKategoriEkle.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnKategoriEkle.ForeColor = System.Drawing.Color.White;
-            this.btnKategoriEkle.Location = new System.Drawing.Point(24, 285);
+            this.btnKategoriEkle.Location = new System.Drawing.Point(24, 213);
             this.btnKategoriEkle.Name = "btnKategoriEkle";
             this.btnKategoriEkle.Size = new System.Drawing.Size(95, 67);
             this.btnKategoriEkle.TabIndex = 3;
@@ -194,7 +194,7 @@
             this.tpUrunEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpUrunEkle.Name = "tpUrunEkle";
             this.tpUrunEkle.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tpUrunEkle.Size = new System.Drawing.Size(872, 354);
+            this.tpUrunEkle.Size = new System.Drawing.Size(788, 368);
             this.tpUrunEkle.TabIndex = 1;
             this.tpUrunEkle.Text = "Ürün Ekle";
             // 
@@ -312,11 +312,22 @@
             this.label10.TabIndex = 20;
             this.label10.Text = "Kategori Adı";
             // 
+            // btnMenuEGeri
+            // 
+            this.btnMenuEGeri.Location = new System.Drawing.Point(814, 5);
+            this.btnMenuEGeri.Name = "btnMenuEGeri";
+            this.btnMenuEGeri.Size = new System.Drawing.Size(90, 55);
+            this.btnMenuEGeri.TabIndex = 26;
+            this.btnMenuEGeri.Text = "Geri";
+            this.btnMenuEGeri.UseVisualStyleBackColor = true;
+            this.btnMenuEGeri.Click += new System.EventHandler(this.btnMenuEGeri_Click);
+            // 
             // KategoriUrunEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 404);
+            this.ClientSize = new System.Drawing.Size(914, 441);
+            this.Controls.Add(this.btnMenuEGeri);
             this.Controls.Add(this.tcKategoriEkle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -355,5 +366,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cmbKategoriAdi;
         private System.Windows.Forms.ListView lstKategori;
+        private System.Windows.Forms.Button btnMenuEGeri;
     }
 }

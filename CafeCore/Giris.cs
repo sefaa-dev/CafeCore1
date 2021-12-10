@@ -16,42 +16,49 @@ namespace CafeCore
         public Giris()
         {
             InitializeComponent();
+           
         }
 
-        private KatEkle _katEkle;
-        private Masalar _masaEkle;
-        private KategoriUrunEkle _kategoriUrunEkle;
+        //private KatEkle _katEkle;
+        //private Masalar _masaEkle;
+        //private KategoriUrunEkle _kategoriUrunEkle;
 
         private void btnfrmKatEkle_Click(object sender, EventArgs e)
         {
 
-          if(_katEkle == null)
-            {
-                _katEkle = new KatEkle();
-            }
-            _katEkle.Show();
+            //if(_katEkle == null)
+            //  {
+            //      _katEkle = new KatEkle();
+            //  }
+            //  _katEkle.Show();
 
-          
-
-
+            KatEkle frmKatEkle = new KatEkle();
+            this.Hide();
+            frmKatEkle.Show();
         }
 
-        private void btnfrmMenuEkle_Click(object sender, EventArgs e)  
+        private void btnfrmMenuEkle_Click(object sender, EventArgs e)
         {
-            if(_kategoriUrunEkle == null)
-            {
-                _kategoriUrunEkle = new KategoriUrunEkle();
-            }
-            _kategoriUrunEkle.Show();
+            //if(_kategoriUrunEkle == null)
+            //{
+            //    _kategoriUrunEkle = new KategoriUrunEkle();
+            //}
+            //_kategoriUrunEkle.Show();
+
+            KategoriUrunEkle frmKategoriUrunEkle = new KategoriUrunEkle();
+            this.Hide();
+
+            frmKategoriUrunEkle.Show();
         }
 
         private void btnfrmMasaEkle_Click(object sender, EventArgs e)
         {
-            if(_masaEkle == null)
-            {
-                _masaEkle = new Masalar();
-            }
-            _masaEkle.Show();
+            //if(_masaEkle == null)
+            //{
+            //    _masaEkle = new Masalar();
+            //}
+            //_masaEkle.Show();
+
         }
     }
 }

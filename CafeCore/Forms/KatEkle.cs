@@ -144,5 +144,13 @@ namespace CafeCore.Forms
 
 
         }
+
+        private void btnKatGeri_Click(object sender, EventArgs e)
+        {
+            Giris frmGiris = new Giris();
+            
+            frmGiris.Show();
+            this.Hide();
+        }
     }
 }
